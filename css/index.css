@@ -1,1 +1,309 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+  color: navy;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 0.9rem;
+}
+li {
+  color: navy;
+  font-weight: bold;
+}
+p {
+  font-family: 'Permanent Marker', cursive;
+  color: navy;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.navbar a {
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Pacifico', cursive;
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.topsection {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px dashed black;
+  padding-top: 30px;
+  border-bottom: 1px dashed black;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.topsection .topheader {
+  width: 50%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topsection .infobutton {
+  border: 1px solid black;
+  margin-top: 8px;
+  padding: 6px 40px;
+  background-color: silver;
+  border-radius: 5px;
+}
+@media screen and (max-width: 500px) {
+  .topsection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.middlesection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.middlesection .middletext {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middlesection .middlelist {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .middlesection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.bottomtable {
+  border-top: 1px dashed black;
+  padding-top: 30px;
+  border-collapse: collapse;
+  font-size: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.bottomtable table,
+.bottomtable th,
+.bottomtable td {
+  border: 1px solid black;
+}
+.bottomtable th {
+  font-weight: bold;
+}
+.bottomtable th,
+.bottomtable td {
+  padding: 5px;
+}
+@media screen and (max-width: 500px) {
+  .bottomtable {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer h3 {
+    font-size: 10px;
+  }
+}
